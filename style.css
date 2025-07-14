@@ -1,0 +1,122 @@
+/* Mobile Navigation */
+.mobile-nav-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--dark-green);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-btn {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        padding: 6rem 2rem;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+}
+
+/* Cart Notification */
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-green);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.cart-notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Sticky Header Effects */
+header.scrolled {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.95);
+}
+
+header.scrolled-up {
+    transform: translateY(0);
+}
+
+header.scrolled-down {
+    transform: translateY(-100%);
+}
+
+/* Product Carousel */
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card {
+    transition: all 0.5s ease;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 10;
+}
+
+.carousel-btn {
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Lazy Loading Images */
+img[data-src] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Form Validation */
+input.error {
+    border: 2px solid #ff4444 !important;
+}
+
+.newsletter-success {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}

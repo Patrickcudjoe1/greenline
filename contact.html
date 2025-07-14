@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+    <title>Green Line | Contact Us</title>
+</head>
+<body>
+    <!-- Shared header here -->
+    
+    <main class="contact-page">
+        <section class="contact-hero">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you</p>
+        </section>
+        
+        <div class="contact-container">
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="wholesale">Wholesale</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </section>
+            
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>123 Green Street<br>Eco City, EC 12345</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@greenlinejuice.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Hours</h3>
+                    <p>Monday-Friday: 8AM-6PM<br>Saturday: 9AM-4PM</p>
+                </div>
+            </section>
+        </div>
+        
+        <section class="location-map">
+            <iframe src="https://maps.google.com/maps?q=123%20Green%20Street&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>GreenLine</h3>
+            <p>Fresh, organic juices for a healthier lifestyle.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Green Street</p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@greenline.com</p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; 2023 GreenLine Juice Company. All rights reserved.</p>
+    </div>
+</footer>
+    <!-- Shared footer -->
+    <script src="js/main.js"></script>
+</body>
+</html>
